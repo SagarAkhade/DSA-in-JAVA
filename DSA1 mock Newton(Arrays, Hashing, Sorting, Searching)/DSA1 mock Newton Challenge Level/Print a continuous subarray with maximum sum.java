@@ -1,6 +1,6 @@
 // "static void main" must be defined in a public class.
 /*
-18. Print a continuous subarray with maximum sum.
+Print a continuous subarray with maximum sum.
 Input: {-2, 1, -3, 4, -1, 2, 1, -5, 4}
 Output: The contiguous subarray with the largest sum is {4, -1, 2, 1}
 Input: arr = [-2, -3, 4, -1, -2, 1, 5, -3]
