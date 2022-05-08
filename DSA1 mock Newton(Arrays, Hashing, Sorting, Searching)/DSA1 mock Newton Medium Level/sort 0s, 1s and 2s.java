@@ -15,7 +15,7 @@ public class Main {
         int j=0; 
         int k=arr.length - 1;
         while(i<=k){              //Time Complexity -> O(N)
-            if(arr[i] == 0){      //Space Complexity -> O(N)
+            if(arr[i] == 0){      //Space Complexity -> O(1)
                 swap(arr, i, j);
                 i++;
                 j++;
