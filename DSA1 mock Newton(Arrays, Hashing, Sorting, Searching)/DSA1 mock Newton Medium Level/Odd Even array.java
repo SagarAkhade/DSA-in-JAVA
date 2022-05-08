@@ -16,7 +16,7 @@ public class Main {
     public static Integer[] sortOddEven(Integer[] arr){   // Time Complexity -> O(NlogN)  
         int oddelements = -1;                            // Space Complexity -> O(1)           
         for(int i=0; i<arr.length; i++){  // moving odd elements to left and even to right
-						if(arr[i]%2 != 0){
+            if(arr[i]%2 != 0){
                 oddelements++;
                 int temp = arr[i];
                 arr[i] = arr[oddelements];
