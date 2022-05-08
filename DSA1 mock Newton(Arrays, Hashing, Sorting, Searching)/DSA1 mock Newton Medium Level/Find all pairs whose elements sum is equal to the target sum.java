@@ -35,8 +35,8 @@ public class Main {
         Arrays.sort(arr);
         int start = 0;
         int end = arr.length - 1;
-        while(start < end){                         // Time Complexity -> O(NlogN)
-            int sum = arr[start] + arr[end];       // Space Complexity -> O(N)
+        while(start < end){                         // Time Complexity -> O(N)
+            int sum = arr[start] + arr[end];       // Space Complexity -> O(1)
             if(sum == target){
                 System.out.println(arr[start] + " " + arr[end]);
                 start++;
