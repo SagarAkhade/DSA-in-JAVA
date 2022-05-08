@@ -13,7 +13,7 @@ public class Main {
     public static double median(int arr1[], int arr2[], int m, int n) {
     if(m>n)
         return median(arr2,arr1,n,m);//ensuring that binary search happens on minimum
-				 size array
+				 //size array
         
     int low=0;                  // Time Complexity -> O(log(m,n))
     int high=m;                 // Space Complexity -> O(1)
