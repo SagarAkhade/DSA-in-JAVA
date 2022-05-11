@@ -9,10 +9,9 @@ public class Main {
         System.out.println("Max occuring element : " + maxOccurence(arr));
         //maxOccurence(arr);
     }
-    
+    // Time Complexity -> O(N)  Space Complexity -> O(N)
     public static int maxOccurence(int[] arr){
-        Map<Integer, Integer> map = new HashMap<>();   // Time Complexity -> O(N)
-																								      // Space Complexity -> O(N)
+        Map<Integer, Integer> map = new HashMap<>();   
         for(int i=0; i<arr.length; i++){
             map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
