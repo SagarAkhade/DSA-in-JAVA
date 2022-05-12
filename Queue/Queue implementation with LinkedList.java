@@ -27,6 +27,12 @@ public class Main {
         
         // q.size() -> method to print the size of queue
         System.out.println("Size of queue : " + q.size());
+        
+        // Iterating method for queue elements 
+        Iterator iterator = q.iterator();
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+        }
     }
 }
 --------------
@@ -38,3 +44,4 @@ removed element : 1
 head of queue : 2
 Whether queue is empty or not : false
 Size of queue : 4
+2 3 4 5
