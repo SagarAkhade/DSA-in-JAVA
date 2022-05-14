@@ -13,10 +13,10 @@ public class Main {
                 stack.push(i);
             }
             else{
-                if(!stack.empty()){
+                if(!stack.isEmpty()){
                     stack.pop();
                 }
-                if (!stack.empty()){
+                if (!stack.isEmpty()){
                     result= Math.max(result, i - stack.peek());
                 }
                 else
