@@ -19,8 +19,8 @@ public class A_7_Stack_1_Stack_Implementation {
     }
 
     public A_7_Stack_1_Stack_Implementation(){ // Constructor for stack
-        top = null;
-        length = 0;
+        this.top = null;
+        this.length = 0;
     }
 
     public int length(){
