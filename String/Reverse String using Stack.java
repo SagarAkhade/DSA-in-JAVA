@@ -16,7 +16,7 @@ public class A_4_String_2_Reverse_String_using_Stack {
             stack.push(c);  // stack.push() method will add elements in stack
         }
         for(int i=0; i<str.length(); i++){
-            chars[i] = stack.pop();  //stack.pop(); method will gives us elements ba
+            chars[i] = stack.pop();  //stack.pop(); method will gives us elements back
         }
         return new String(chars);
     }
