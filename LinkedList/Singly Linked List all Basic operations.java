@@ -124,7 +124,7 @@ public class A_6_Linked_List_1_SinglyLinkedList {
     public void deleteNode(int key){  // This Method will remove Key from SLL
         ListNode current = head;
         ListNode temp = null;
-        if(current != null && current.data != key){ // We found key at head
+        if(current != null && current.data == key){ // We found key at head
             head = current.next;
             return;
         }
