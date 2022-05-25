@@ -1,7 +1,7 @@
 package com.company;
 import java.util.*;
 
-// Q. Longest Repeating Character Without Repeating Character | Coding Interview Question
+// Q. Longest Substring Without Repeating Characters | Coding Interview Question
 public class A_4_String_6_Longest_SubString_Without_Repeating_Character {
     public static void main(String[] args) {
         String str = "abcabcbb";
