@@ -8,7 +8,7 @@ public class A_4_String_6_Longest_SubString_Without_Repeating_Character {
         System.out.println(lengthOfLongestSubstring(str));
     }
 
-    // Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
+    // Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(1)
     public static int lengthOfLongestSubstring(String str){
         Map<Character, Integer> map = new HashMap<>();
         int maxLength = 0;
