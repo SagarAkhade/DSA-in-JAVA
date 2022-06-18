@@ -20,7 +20,7 @@ public class Main {
         }
     }
   
-   //Most Optimal Solution : Time Complexity - O(N)  Space Complexity - O(1) 
+   //Most Optimal Solution : Time Complexity - O(N)  Space Complexity - O(N) 
     public static boolean isValid(String str){
         char[] charArray = str.toCharArray();
         Stack<Character> stack = new Stack<>();
