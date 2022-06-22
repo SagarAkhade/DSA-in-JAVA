@@ -25,7 +25,7 @@ public class Main {
         ListNode slowPtr = head;
         ListNode fastPtr = head;
         while(fastPtr != null && fastPtr.next != null){
-             slowPtr = slowPtr.next;
+            slowPtr = slowPtr.next;
             fastPtr = fastPtr.next.next;
         }
         return slowPtr.data;
