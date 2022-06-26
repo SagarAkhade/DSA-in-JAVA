@@ -32,7 +32,6 @@ public class Main {
           if (node.data == val) {
             temp = node;
           }
-
           node = node.next;
         }
         if (temp == null) {
