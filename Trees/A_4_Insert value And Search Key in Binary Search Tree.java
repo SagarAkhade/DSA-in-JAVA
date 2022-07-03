@@ -1,7 +1,7 @@
 package com.company.A_9_Trees;
-//Q. Insert Node in BST | Coding Interview Question
+//Q. Insert Node And Search Key in BST | Coding Interview Question
 
-public class A_9_Tree_4_Insert_Node_In_Binary_Search_Tree {
+public class A_9_Tree_4_Insert_Node_And_Search_Key_In_Binary_Search_Tree {
     public TreeNode root;
     public static class TreeNode{
         int data;
@@ -42,8 +42,21 @@ public class A_9_Tree_4_Insert_Node_In_Binary_Search_Tree {
         inOrder(root.right);
     }
 
+    //Search key in BST
+    public TreeNode search(TreeNode root, int key){
+        if(root == null || root.data == key){  //base Condition
+            return root;
+        }
+        if(key < root.data) {
+            return search(root.left, key);
+        }
+        else {
+            return search(root.right, key);
+        }
+    }
+
     public static void main(String[] args) {
-        A_9_Tree_4_Insert_Node_In_Binary_Search_Tree bst = new A_9_Tree_4_Insert_Node_In_Binary_Search_Tree();
+        A_9_Tree_4_Insert_Node_And_Search_Key_In_Binary_Search_Tree bst = new A_9_Tree_4_Insert_Node_And_Search_Key_In_Binary_Search_Tree();
         bst.insert(5);  // inserting Nodes in BST
         bst.insert(3);
         bst.insert(7);
@@ -51,6 +64,16 @@ public class A_9_Tree_4_Insert_Node_In_Binary_Search_Tree {
 
         // When we print BST in inOder form then node will be in Sorted in O/p
         bst.inOrder(bst.root);
+        System.out.println();
         //Output : 1 3 5 7
+
+        //Search key in BST
+        if(bst.search(bst.root, 5) != null) {
+            System.out.println("Key Found !!!");
+        }
+        else{
+            System.out.println("Key Not Found!!!");
+        }
+        // Output : Key Found !!!
     }
 }
