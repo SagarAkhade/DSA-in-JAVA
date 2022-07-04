@@ -10,7 +10,7 @@ public class A_4_String_4_First_Non_Repeating_Character_In_String {
         System.out.println(firstNonRepeatingCharacter(str));
     }
 
-		//Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
+    //Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
     public static int firstNonRepeatingCharacter(String str){
         Map<Character, Integer> map = new HashMap<>();
         char[] chars = str.toCharArray();
@@ -18,8 +18,7 @@ public class A_4_String_4_First_Non_Repeating_Character_In_String {
             map.put(ch, map.getOrDefault(ch, 0) + 1);
         }
         for(int i=0; i<chars.length; i++){  // Getting Index of first non-repeating character in String
-            char ch = chars[i];
-            if(map.get(ch)==1){
+            if(map.get(chars[i]) == 1) {
                 return i;
             }
         }
