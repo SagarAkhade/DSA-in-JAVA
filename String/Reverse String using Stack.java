@@ -11,7 +11,7 @@ public class A_4_String_2_Reverse_String_using_Stack {
 
     public static String reverseString(String str){
         char[] chars = str.toCharArray();
-        Stack<Character> stack = new Stack<>(); // Stack will store string -> FILO
+        Stack<Character> stack = new Stack<>(); // Stack will store string -> LIFO
         for(char c : chars){
             stack.push(c);  // stack.push() method will add elements in stack
         }
