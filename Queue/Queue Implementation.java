@@ -2,7 +2,7 @@ package com.company.A_8_Queue;
 //import java.util.NoSuchElementException;
 import java.util.*;
 
-// Queue Implementation
+// Queue Implementation Using Linked List 
 public class A_8_Queue_1_Queue_Implementation {
     private ListNode front;  // instance variable for front
     private ListNode rear;   // instance variable for rear
