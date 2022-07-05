@@ -15,29 +15,23 @@ public class Main {
         printArray(result);
     }
     
-     //Most Optimal Solution : Time Complexity - O(N)  Space Complexity - O(N) 
-    public static int[] nextGreater(int[] arr){
+     //Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
+    public static int[] nextGreaterElement(int[] arr){
         int[] result = new int[arr.length];
         Stack<Integer> stack = new Stack<>();
+
         for(int i=arr.length-1; i>=0; i--){
-            if(stack.isEmpty()){
-                stack.push(arr[i]);
-                result[i] = -1;
-            }
-            else{
-                if(!stack.isEmpty()){
-                    while(!stack.isEmpty() && arr[i]>=stack.peek()){
-                        stack.pop();
-                    }
-                    if(stack.isEmpty()){
-                        result[i] = -1;
-                    }
-                    else{
-                        result[i] = stack.peek();
-                    }
+            if(!stack.isEmpty()){      //stack.isEmpty() method is used to check whether stack is empty or not
+                while (!stack.isEmpty() && stack.peek()<=arr[i]){  //stack.peek() method for pointing element at top
+                    stack.pop();
                 }
-                stack.push(arr[i]);
             }
+            if(stack.isEmpty()){
+                result[i] = -1;
+            }else{
+                result[i] = stack.peek(); //peek() method used for getting value at top of Stack
+            }
+            stack.push(arr[i]);  // push(object) method used to store element in Stack
         }
         return result;
     }
