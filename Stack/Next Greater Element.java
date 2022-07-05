@@ -11,7 +11,7 @@ public class A_7_Stack_3_Next_Greater_Element {
 
     }
 
-    //Optimal Solution - Time Complexity -> O(NlogN) Time Complexity -> O(N)
+    //Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
     public static int[] nextGreaterElement(int[] arr){
         int[] result = new int[arr.length];
         Stack<Integer> stack = new Stack<>();
