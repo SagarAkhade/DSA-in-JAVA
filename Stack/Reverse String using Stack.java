@@ -9,7 +9,7 @@ public class A_7_String_2_Reverse_String_using_Stack {
         System.out.println("After reverse : " + reverseString(str));
     }
 
-    //Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(1)
+    //Optimal Solution - Time Complexity -> O(N) Space Complexity -> O(N)
     public static String reverseString(String str){
         Stack<Character> stack = new Stack<>();
         char[] chars = str.toCharArray();
