@@ -19,8 +19,9 @@ public class Main {
                 if (!stack.isEmpty()){
                     result= Math.max(result, i - stack.peek());
                 }
-                else
+                else{
                     stack.push(i);
+                } 
             }
         }
         return result;
