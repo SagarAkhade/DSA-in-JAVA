@@ -1,6 +1,7 @@
 // "static void main" must be defined in a public class.
 /*
 Q. Remove Middle Node of LinkedList
+(Asked to me)
 */
 
 public class Main {
