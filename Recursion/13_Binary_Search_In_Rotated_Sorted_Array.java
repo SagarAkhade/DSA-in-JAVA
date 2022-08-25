@@ -20,9 +20,6 @@ public class A_13_Binary_Search_In_Rotated_Sorted_Array {
                 return searchInRotatedSortedArray(arr, target, mid + 1, end);
             }
         }
-        if(target >= arr[mid] && target <= arr[end]) {
-            return searchInRotatedSortedArray(arr, target, mid + 1, end);
-        }
         return searchInRotatedSortedArray(arr, target, mid + 1, end);
     }
 
