@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class A_12_Linear_Search_Using_Recursion {
     public static boolean linearSearch(int[] arr, int target, int index) {
-        if(index == arr.length - 1){
+        if(index == arr.length){
             return false;
         }
         if(arr[index] == target){
